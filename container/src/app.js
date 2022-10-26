@@ -2,7 +2,7 @@ import React, {lazy, Suspense} from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Header } from './components/header';
 import { StylesProvider, createGenerateClassName } from '@material-ui/core/styles';
-import { Loader } from '../../auth/src/components/loader';
+import { Loader } from './components/loader';
 
 const generateClassName = createGenerateClassName({
     productionPrefix: 'container'
