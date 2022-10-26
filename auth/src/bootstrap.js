@@ -13,6 +13,7 @@ const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
         history.listen(onNavigate);
     }
 
+
     ReactDOM.render(
         <App history={history} />        ,
         el
@@ -27,8 +28,10 @@ const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
     };
 };
 
+
+
 if(process.env.NODE_ENV === 'development') {
-    const el = document.querySelector("#marketing-dev-root");
+    const el = document.querySelector("#auth-dev-root");
 
     if(el) {
         mount(el, { defaultHistory: createBrowserHistory() });
