@@ -79,7 +79,7 @@ export const  Header = ({ isSignedIn, onSignOut }) =>{
             component={RouterLink}
             to="/"
           >
-            App
+            App Test
           </Typography>
           <Button
             color="primary"
